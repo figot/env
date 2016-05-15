@@ -42,23 +42,23 @@ module.config([
         $routeProvider
         //默认
         .when('/', {
-             templateUrl: '/static/env/views/home/home.html',
+             templateUrl: '/env/static/env/views/home/home.html',
              controller: 'HomeController'           
         })
         .when('/airport', {
-            templateUrl: '/static/env/views/airport/airport.html',
+            templateUrl: '/env/static/env/views/airport/airport.html',
             controller: 'AirController'
         })
         .when('/dayreport', {
-            templateUrl: '/static/env/views/dayreport/dayreport.html',
+            templateUrl: '/env/static/env/views/dayreport/dayreport.html',
             controller: 'DayreportController'
         })
         .when('/trend', {
-            templateUrl: '/static/env/views/trend/trend.html',
+            templateUrl: '/env/static/env/views/trend/trend.html',
             controller: 'TrendController'
         })
         .when('/about', {
-            templateUrl: '/static/env/views/about/info.html',
+            templateUrl: '/env/static/env/views/about/info.html',
             controller: 'AboutController'
         })
         .otherwise({
@@ -68,6 +68,6 @@ module.config([
     }
 ]);
 module.run(['$rootScope', function ($rootScope) {
-    $rootScope.headerUrl = '/static/env/views/header/header.html';
+    $rootScope.headerUrl = '/env/static/env/views/header/header.html';
 }]);
 

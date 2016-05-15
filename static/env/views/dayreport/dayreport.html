@@ -1,0 +1,36 @@
+<div ng-controller="DayreportController" ng-cloak>
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card>
+        <div class="lock-size" layout="row" layout-align="center center">
+        最近24小时AQI变化图
+        </div>
+        <line-chart config="config" data="data"></line-chart>
+      </md-card>
+      <md-card>
+		<div class="lock-size" layout="row" layout-align="center center">
+            污染浓度值变化
+        </div>
+      	<line-chart config="config" data="multiple"></line-chart>
+      </md-card>
+    </div>
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card>
+        <div class="lock-size" layout="row" layout-align="center center">
+        最近24小时AQI变化图
+        </div>
+        <bar-chart config="config" data="data"></bar-chart>
+      </md-card>
+      <md-card>
+        <div class="lock-size" layout="row" layout-align="center center">
+            污染浓度值变化
+        </div>
+        <area-chart config="config" data="multiple"></area-chart>
+      </md-card>
+    </div>
+  </md-content>
+
+</div>
+
+
+

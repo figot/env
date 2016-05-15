@@ -1,0 +1,111 @@
+{
+    "res": {
+        "index.css": {
+            "uri": "/index.css",
+            "type": "css"
+        },
+        "index.js": {
+            "uri": "/index.js",
+            "type": "js",
+            "deps": [
+                "index.css"
+            ]
+        },
+        "static/env/app.js": {
+            "uri": "/static/env/app.js",
+            "type": "js"
+        },
+        "static/env/resources/envreq.js": {
+            "uri": "/static/env/resources/envreq.js",
+            "type": "js"
+        },
+        "static/env/views/about/about.js": {
+            "uri": "/static/env/views/about/about.js",
+            "type": "js"
+        },
+        "static/env/views/airport/airport.js": {
+            "uri": "/static/env/views/airport/airport.js",
+            "type": "js"
+        },
+        "static/env/views/dayreport/dayreport.js": {
+            "uri": "/static/env/views/dayreport/dayreport.js",
+            "type": "js"
+        },
+        "static/env/views/header/header.css": {
+            "uri": "/static/env/views/header/header.css",
+            "type": "css"
+        },
+        "static/env/views/header/header.js": {
+            "uri": "/static/env/views/header/header.js",
+            "type": "js",
+            "deps": [
+                "static/env/views/header/header.css"
+            ]
+        },
+        "static/env/views/home/home.js": {
+            "uri": "/static/env/views/home/home.js",
+            "type": "js"
+        },
+        "static/env/views/trend/trend.js": {
+            "uri": "/static/env/views/trend/trend.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-animate.js": {
+            "uri": "/static/envlib/angular/angular-animate.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-aria.js": {
+            "uri": "/static/envlib/angular/angular-aria.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-material.js": {
+            "uri": "/static/envlib/angular/angular-material.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-messages.js": {
+            "uri": "/static/envlib/angular/angular-messages.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-resource.js": {
+            "uri": "/static/envlib/angular/angular-resource.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-route.js": {
+            "uri": "/static/envlib/angular/angular-route.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-sanitize.js": {
+            "uri": "/static/envlib/angular/angular-sanitize.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular-ui-event.js": {
+            "uri": "/static/envlib/angular/angular-ui-event.js",
+            "type": "js"
+        },
+        "static/envlib/angular/angular.js": {
+            "uri": "/static/envlib/angular/angular.js",
+            "type": "js"
+        },
+        "static/envlib/angular/css/angular-material.css": {
+            "uri": "/static/envlib/angular/css/angular-material.css",
+            "type": "css"
+        },
+        "static/envlib/bmap/angular-bmap.js": {
+            "uri": "/static/envlib/bmap/angular-bmap.js",
+            "type": "js"
+        },
+        "static/envlib/echarts/angular-echarts.js": {
+            "uri": "/static/envlib/echarts/angular-echarts.js",
+            "type": "js"
+        },
+        "static/envlib/echarts/echarts.simple.min.js": {
+            "uri": "/static/envlib/echarts/echarts.simple.min.js",
+            "type": "js"
+        },
+        "static/envlib/jquery-2.2.1.min.js": {
+            "uri": "/static/envlib/jquery-2.2.1.min.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

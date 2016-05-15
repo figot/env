@@ -1,0 +1,54 @@
+.menudemoBasicUsage .md-menu-demo
+{
+    padding: 24px;
+    width: 100%; 
+}
+
+.mainContent
+{
+    margin: 0px;
+    min-height: 1000px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 64px 0 0;
+}
+
+.custom-header {
+    position: fixed;
+}
+.menudemoBasicUsage .menu-demo-container {
+    min-height: 200px;
+}
+
+.md-toolbar-res {
+    background-color: #0091ea;
+    min-height: 48px;
+    height: 48px;
+}
+
+.md-toolbar-req {
+    min-height: 48px;
+    height: 48px;
+}
+
+.label-pos {
+    position: fixed;
+    right:100px;
+    top:80px;
+}
+
+.md-json-content {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.radio-inline {
+    display: inline-block;
+}
+
+.container {
+    min-height: 500px;
+}

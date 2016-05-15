@@ -1,0 +1,85 @@
+<md-list ng-controller="AboutController" ng-cloak>
+    <div class="mainContent">
+        <section class="demo-container md-whiteframe-z1">
+            <md-toolbar class="demo-toolbar md-primary">
+                <div class="md-toolbar-tools">
+                    <h3 class="ng-binding">LCS详细信息</h3>
+                    <span flex="" class="flex"></span>
+                    <button class="md-button md-ink-ripple" ng-click="goBackToLcsList()" type="button">返回列表页</button>
+                    <button class="md-button md-ink-ripple hide-sm" type="button" ng-click="BackpageDetail()">上一页</button>
+                    <button class="md-button md-ink-ripple hide-sm" type="button" ng-click="FirstpageDetail()">第一页</button>
+                    <button class="md-button md-ink-ripple hide-sm" type="button" ng-click="NextpageDetail()">下一页</button>
+                </div>
+            </md-toolbar>
+            <md-content>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">cuid</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.cuid}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">用户id</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.uid}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">用户名</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.uname}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">长连接地址</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.host + ':' + lcsdata.deviceinfo.port}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">更新时间</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.updatetime}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+                <md-list-item ng-click="">
+                    <div class="ng-binding md-body-2" flex="15">备注</div>
+                    <div class="ng-binding md-body-2" flex="50">{{lcsdata.deviceinfo.remark}}</div>
+                </md-list-item>
+                <md-divider></md-divider>
+            </md-content>
+        </section> 
+    </div>
+
+    <div class="mainContent" ng-repeat="lcsreq in lcsdata.recordlist track by $index">
+        <section class="demo-container md-whiteframe-z1">
+                    <md-toolbar class="demo-toolbar md-primary md-toolbar-req" flex="100">
+                        <div class="md-toolbar-tools md-toolbar-req" ng-if="lcsreq.reqtype == 1">
+                            <h3 class="ng-binding" flex="15">命令号:{{lcsreq.cmd}}</h3>
+                            <h3 class="ng-binding" flex="30">请求时间:{{lcsreq.reqtime}}</h3>
+                            <h3 class="ng-binding" flex="10">HHTP请求</h3>
+                            <span flex="" class="flex"></span>
+                            <button class="md-button md-ink-ripple" type="button" ng-click="lcsreq.showjson = !lcsreq.showjson">
+                                <div ng-if="lcsreq.showjson">隐藏</div>
+                                <div ng-if="!lcsreq.showjson">展开</div>
+                            </button>
+                        </div>
+                        <div class="md-toolbar-tools md-toolbar-res" ng-if="lcsreq.reqtype == 2">
+                            <h3 class="ng-binding" flex="15">命令号:{{lcsreq.cmd}}</h3>
+                            <h3 class="ng-binding" flex="30">请求时间:{{lcsreq.reqtime}}</h3>
+                            <h3 class="ng-binding" flex="10">HHTP响应</h3>
+                            <span flex="" class="flex"></span>
+                            <button class="md-button md-ink-ripple" ng-click="lcsreq.showjson = !lcsreq.showjson" type="button">
+                                <div ng-if="lcsreq.showjson">隐藏</div>
+                                <div ng-if="!lcsreq.showjson">展开</div>
+                            </button>
+                        </div>
+                    </md-toolbar>
+                    <md-content flex="100" aria-hidden="true" ng-show="lcsreq.showjson">
+                        <div class="md-json-content">
+                            <json-formatter json="lcsreq.reqinfo" open="1"></json-formatter>
+                        </div>
+                    </md-content>
+
+        </section> 
+    </div>
+
+</md-list>
+
+
+

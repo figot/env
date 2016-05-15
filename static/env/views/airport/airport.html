@@ -1,0 +1,109 @@
+<div ng-controller="AirController" ng-cloak>
+
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <h1>实时空气质量指数</h1>
+            <div class="lock-size" layout="row" layout-align="start center">
+              <md-button aria-label="AQI" class="md-fab md-warn">
+                <md-tooltip md-direction="right" md-visible="tooltipVisible">100</md-tooltip>
+                AQI
+              </md-button>
+              <label>50</label>
+            </div>
+          </md-card-title-text>
+        </md-card-title>
+        <md-divider></md-divider>
+        <md-card-content layout="row" layout-align="space-between">
+            <div class="md-media-xl card-media">
+              <h4>首要污染物</h4>
+              <md-divider></md-divider>
+              <h4>对健康的影响</h4>
+              <md-divider></md-divider>
+              <h4>建议措施</h4>
+              <md-divider></md-divider>
+            </div>
+            <md-card-actions layout="column">
+                <img src="/static/img/air1.png" class="md-card-image" alt="空气质量">
+            </md-card-actions>
+        </md-card-content>
+      </md-card>
+
+
+    </div>
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card>
+        <img src="/static/img/bg.jpg" class="md-card-image" alt="空气质量">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">空气质量数据</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p>
+
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center center">
+          <md-button aria-label="pm25" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            PM2.5
+          </md-button>
+          <md-button aria-label="pm10" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            PM10
+          </md-button>
+          <md-button aria-label="so2" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            SO2
+          </md-button>
+          <md-button aria-label="no" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            NO
+          </md-button>
+          <md-button aria-label="no2" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            NO2
+          </md-button>
+          <md-button aria-label="co" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            CO
+          </md-button>
+          <md-button aria-label="o3" class="md-fab md-raised md-accent">
+            <md-tooltip md-direction="left" md-visible="tooltipVisible">100</md-tooltip>
+            O3 1h
+          </md-button>
+        </md-card-actions>
+        <md-card-actions layout="row" layout-align="center center">
+          <md-button aria-label="pm25" class="md-fab md-raised md-primary">
+            100
+          </md-button>
+          <md-button aria-label="pm10" class="md-fab md-raised md-primary">
+            50
+          </md-button>
+          <md-button aria-label="so2" class="md-fab md-raised md-primary">
+            60
+          </md-button>
+          <md-button aria-label="no" class="md-fab md-raised md-primary">
+            70
+          </md-button>
+          <md-button aria-label="no2" class="md-fab md-raised md-primary">
+            80
+          </md-button>
+          <md-button aria-label="co" class="md-fab md-raised md-primary">
+            90
+          </md-button>
+          <md-button aria-label="o3" class="md-fab md-raised md-primary">
+            10
+          </md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
+
+</div>
+
+
+

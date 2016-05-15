@@ -1,0 +1,23 @@
+<md-toolbar ng-controller="HeaderController" layout="column" class="custom-header">
+    <div class="md-toolbar-tools">
+        <h2>
+          <span>环境监测实时发布系统</span>
+        </h2>
+        <span flex></span>
+            <md-button aria-label="main" ng-click="mainPage()">
+                首页
+            </md-button>    
+            <md-button aria-label="airPort" ng-click="airPortPage()">
+                空气质量指数
+            </md-button>
+            <md-button aria-label="dayReport" ng-click="dayReportPage()">
+                AQI日报
+            </md-button>
+            <md-button aria-label="trend" ng-click="trendPage()">
+                空气质量趋势
+            </md-button>
+            <md-button aria-label="about" ng-click="about()">
+                说明
+            </md-button>
+    </div>
+</md-toolbar>

@@ -1,0 +1,64 @@
+<md-dialog ng-cloak>
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>长连接代理配置</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <md-content layout-padding>
+                <form name="projectForm">
+                    <md-input-container class="md-block">
+                        <label>长连接CUID</label>
+                        <input md-maxlength="100" disabled required name="description" ng-model="lcsItem.cuid">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <label>长连接建立时间</label>
+                        <input required disabled name="time" ng-model="lcsItem.updatetime">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <md-radio-group layout="row" ng-model="lcsItem.isOnline">
+                            <md-radio-button value="1" class="md-primary radio-inline">线上</md-radio-button>
+                            <md-radio-button value="0">线下 </md-radio-button>
+                        </md-radio-group>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>长连接地址配置</label>
+                        <input ng-model="lcsItem.host" />
+                        <div ng-messages="projectForm.clientEmail.$error" role="alert">
+                            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                            配置长连接地址为线上或者线下地址，配置为线上无需填写服务器地址，配置为线下需要线下服务器地址
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container>
+                        <label>长连接端口配置</label>
+                        <input required name="port" ng-model="lcsItem.port">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                      <label>长连接备注</label>
+                      <input ng-model="lcsItem.remark">
+                      <div ng-messages="projectForm.clientName.$error">
+                        <div ng-message="required">长连接备注</div>
+                      </div>
+                    </md-input-container>
+                </form>
+            </md-content>
+        </md-dialog-content>
+
+      <md-dialog-actions layout="row">
+          <span flex></span>
+          <md-button ng-click="answer('test')">
+              取消
+          </md-button>
+          <md-button ng-click="updateLcsConf(lcsItem)" style="margin-right:20px;">
+              提交
+          </md-button>
+      </md-dialog-actions>
+    </form>
+</md-dialog>
